@@ -115,22 +115,22 @@ class TasksDaoTest {
         assertEquals(refreshTasks.size, allTasks.size - 1)
 
     }
-//
-//    @Test
-//    fun updateTask() {
-//        //Given
-//        val task = TaskDto(name = "task")
-//        taskDao.insert(task)
-//        val allTasks = taskDao.getAllTasks().waitForValue()
-//        val updatedTask = allTasks[0].copy(name = "NewName")
-//
-//        //When
-//        taskDao.update(updatedTask)
-//
-//        //Then
-//        val refreshTasks = taskDao.getAllTasks().waitForValue()
-//        assertEquals(refreshTasks[0].name, updatedTask.name)
-//
-//    }
+
+    @Test
+    fun updateTask() {
+        //Given
+        val task = TaskDto(name = "task")
+        taskDao.insert(task)
+        val allTasks = taskDao.getAllTasks().waitForValue()
+        val updatedTask = allTasks[0].copy(name = "NewName")
+
+        //When
+        taskDao.update(updatedTask)
+
+        //Then
+        val refreshTasks = taskDao.getAllTasks().waitForValue()
+        assertEquals(refreshTasks[0].name, updatedTask.name)
+
+    }
 
 }
