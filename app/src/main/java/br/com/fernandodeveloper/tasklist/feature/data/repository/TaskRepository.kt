@@ -7,7 +7,7 @@ import br.com.fernandodeveloper.tasklist.feature.data.local.TaskDao
 class TaskRepository private constructor(private val localDataSource: TaskDao) {
 
     suspend fun addTask(taskDto: TaskDto) {
-        localDataSource.insertTask(taskDto)
+        localDataSource.insert(taskDto)
     }
 
     fun getAllTasks(): LiveData<List<TaskDto>> = localDataSource.getAllTasks()
