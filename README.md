@@ -1,4 +1,4 @@
-![](https://miro.medium.com/max/3200/1*hzy-QHo8x4OK5-n8FNzdMA.png =150x150)
+![](https://miro.medium.com/max/3200/1*hzy-QHo8x4OK5-n8FNzdMA.png)
 
 # About
 Here you will find the project used for study purposes for Associate Android Developers, based on the content made available by codelabs and videos via YouTube.
