@@ -6,8 +6,9 @@ import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import br.com.fernandodeveloper.tasklist.GetApplication
 import br.com.fernandodeveloper.tasklist.databinding.ActivityListBinding
-import br.com.fernandodeveloper.tasklist.feature.task.list.presentation.TaskListViewModel
 import br.com.fernandodeveloper.tasklist.feature.task.add.TaskAddActivity
+import br.com.fernandodeveloper.tasklist.feature.task.details.TaskDetailActivity
+import br.com.fernandodeveloper.tasklist.feature.task.list.presentation.TaskListViewModel
 
 class TaskListActivity : AppCompatActivity() {
 
@@ -46,11 +47,11 @@ class TaskListActivity : AppCompatActivity() {
     }
 
     private fun taskListClickListener(taskId: Long) {
-//        startActivity(TaskDetailActivity.start(this, taskId))
+        startActivity(TaskDetailActivity.start(this, taskId))
     }
 
     private fun setObserver() {
-        viewModel.alltasks.observe(this, Observer {
+        viewModel.alltasks.observe(this, {
             adapter.submit(it)
         })
     }
