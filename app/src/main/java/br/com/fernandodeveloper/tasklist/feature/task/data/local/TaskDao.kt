@@ -1,8 +1,8 @@
-package br.com.fernandodeveloper.tasklist.feature.data.local
+package br.com.fernandodeveloper.tasklist.feature.task.data.local
 
 import androidx.lifecycle.LiveData
 import androidx.room.*
-import br.com.fernandodeveloper.tasklist.feature.data.entity.TaskDto
+import br.com.fernandodeveloper.tasklist.feature.task.data.entity.TaskDto
 
 @Dao
 interface TaskDao {

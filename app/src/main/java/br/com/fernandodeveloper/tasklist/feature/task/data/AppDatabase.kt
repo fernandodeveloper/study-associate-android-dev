@@ -1,11 +1,11 @@
-package br.com.fernandodeveloper.tasklist.feature.data
+package br.com.fernandodeveloper.tasklist.feature.task.data
 
 import android.content.Context
 import androidx.room.Database
 import androidx.room.Room
 import androidx.room.RoomDatabase
-import br.com.fernandodeveloper.tasklist.feature.data.entity.TaskDto
-import br.com.fernandodeveloper.tasklist.feature.data.local.TaskDao
+import br.com.fernandodeveloper.tasklist.feature.task.data.entity.TaskDto
+import br.com.fernandodeveloper.tasklist.feature.task.data.local.TaskDao
 
 @Database(entities = [TaskDto::class], version = 1, exportSchema = false)
 abstract class AppDatabase : RoomDatabase() {

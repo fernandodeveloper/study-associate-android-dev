@@ -1,4 +1,4 @@
-package br.com.fernandodeveloper.tasklist.feature.data.entity
+package br.com.fernandodeveloper.tasklist.feature.task.data.entity
 
 import androidx.room.Entity
 import androidx.room.PrimaryKey

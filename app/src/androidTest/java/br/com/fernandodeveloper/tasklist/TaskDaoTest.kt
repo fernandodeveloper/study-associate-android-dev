@@ -5,9 +5,9 @@ import androidx.arch.core.executor.testing.InstantTaskExecutorRule
 import androidx.room.Room
 import androidx.test.core.app.ApplicationProvider
 import androidx.test.ext.junit.runners.AndroidJUnit4
-import br.com.fernandodeveloper.tasklist.feature.data.AppDatabase
-import br.com.fernandodeveloper.tasklist.feature.data.entity.TaskDto
-import br.com.fernandodeveloper.tasklist.feature.data.local.TaskDao
+import br.com.fernandodeveloper.tasklist.feature.task.data.AppDatabase
+import br.com.fernandodeveloper.tasklist.feature.task.data.entity.TaskDto
+import br.com.fernandodeveloper.tasklist.feature.task.data.local.TaskDao
 import org.junit.After
 import org.junit.Assert.assertEquals
 import org.junit.Before
