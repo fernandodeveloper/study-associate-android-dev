@@ -10,16 +10,19 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.TaskList">
+
         <activity
-            android:name=".MainActivity"
-            android:label="@string/title_activity_main"
+            android:name=".feature.task.list.ui.TaskListActivity"
+            android:label="@string/title_activity_task"
             android:theme="@style/Theme.TaskList.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <activity android:name=".feature.task.details.TaskDetailActivity" />
+        <activity android:name=".feature.task.add.TaskAddActivity" />
     </application>
 
 </manifest>
